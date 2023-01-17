@@ -1,0 +1,17 @@
+.pagination-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: $pokedex-spacing-12;
+
+    .pagination-button {
+        background-color: $pokedex-color-white;
+        border: none;
+    }
+
+    .pagination-page {
+        color: $pokedex-color-blue-strong;
+        font-weight: $pokedex-font-weight-bold;
+    }
+
+}

@@ -1,0 +1,87 @@
+.pokemon-details {
+    &-card {
+        position: relative;
+        width: 800px;
+        height: 100%;
+        vertical-align: middle;
+
+        .pokemon-avatar {
+            width: 300px;
+        }
+
+    }
+
+
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: $pokedex-spacing-20;
+    }
+
+    &-type {
+        margin: $pokedex-spacing-8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $pokedex-font-size-14;
+        color: $pokedex-color-blue-strong;
+        gap: $pokedex-spacing-20;
+
+        &__item {
+            font-weight: $pokedex-font-weight-normal;
+            color: $pokedex-color-white;
+            padding: $pokedex-spacing-8;
+            border-radius: 5px;
+        }
+    }
+
+    &-abilities {
+        margin: $pokedex-spacing-8;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: $pokedex-font-size-14;
+        color: $pokedex-color-blue-strong;
+        gap: $pokedex-spacing-8;
+
+        &__item {
+            font-weight: $pokedex-font-weight-normal;
+        }
+    }
+
+    &-stats {
+        margin: $pokedex-spacing-8;
+        font-size: $pokedex-font-size-14;
+        color: $pokedex-color-blue-strong;
+        gap: $pokedex-spacing-8;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 50%;
+        padding: $pokedex-spacing-8;
+
+
+        &__item {
+            font-weight: $pokedex-font-weight-normal;
+            text-align: center;
+        }
+    }
+
+    &-about {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    &-name {
+        color: $pokedex-color-blue-strong;
+        font-size: $pokedex-font-size-40;
+        text-align: center;
+    }
+
+}

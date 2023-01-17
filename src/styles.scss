@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&display=swap');
+
+@import './styles/variables';
+
+//components
+@import './components/Card/styles';
+@import './components/Header/styles';
+@import './components/Pagination/styles';
+@import './components/Loading/styles';
+@import './components/Pokemon/styles';
+@import './components/PokemonDetails/styles';
+@import './components/ProgressBar/styles';
+
+//pages
+@import './pages/Home/styles';
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    color: red;
+    font-size: 22px;
+}

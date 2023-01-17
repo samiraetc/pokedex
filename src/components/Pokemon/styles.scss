@@ -1,0 +1,30 @@
+.pokemon {
+    font-weight: 700;
+    line-height: 19px;
+
+    &-avatar {
+        width: 150px;
+    }
+
+    &__number {
+        font-weight: $pokedex-font-weight-light;
+        color: $pokedex-color-blue-strong;
+        font-size: $pokedex-font-size-14;
+    }
+
+    &__name {
+        font-weight: $pokedex-font-weight-bold;
+        color: black;
+        font-size: $pokedex-font-size-18;
+    }
+
+    &__infos {
+        margin: $pokedex-spacing-8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $pokedex-font-size-14;
+        color: $pokedex-color-yellow-strong;
+        gap: $pokedex-spacing-40;
+    }
+}
