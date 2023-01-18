@@ -3,6 +3,7 @@ import { getPokemon } from '../../api/pokeapi';
 import Card from '../../components/Card/Card';
 import Loading from '../../components/Loading/Loading';
 import Pagination from '../../components/Pagination/Pagination';
+import { Pokemon } from '../../types/typing';
 
 
 const Home = () => {
@@ -16,7 +17,6 @@ const Home = () => {
     const fetchPokemons = async () => {
         try {
             const data = await getPokemon(itensPerPage, itensPerPage * page);
-            console.log(data);
             setPokemons(data?.pokemons);
             setTotalPages(Math.ceil(data?.count / itensPerPage));
             setLoading(false)
@@ -48,7 +48,7 @@ const Home = () => {
                 !loading ? (
                     <div className="container">
                         <div className="pokemon-list-container">
-                            {pokemons.map((pokemon: any) => {
+                            {pokemons.map((pokemon: Pokemon) => {
                                 return (
                                     <Card pokemon={pokemon} />
                                 )
@@ -68,26 +68,3 @@ const Home = () => {
 }
 
 export default Home;
-
-
-/*
-
-(
-                    <div className="container">
-                        <div className="pokemon-list-container">
-                            {pokemons.map((pokemon: any) => {
-                                return (
-                                    <Card pokemon={pokemon} />
-                                )
-                            })}
-                        </div>
-                        <Pagination
-                            page={page + 1}
-                            totalPages={totalPages}
-                            handleBackPage={handleBackPage}
-                            handleNextPage={handleNextPage}
-                        />
-                    </div>
-                )
-
-                */

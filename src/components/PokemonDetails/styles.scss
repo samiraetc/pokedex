@@ -84,4 +84,11 @@
         text-align: center;
     }
 
+    &-favorite {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: center;
+        gap: $pokedex-spacing-40;
+    }
 }

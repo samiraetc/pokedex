@@ -1,16 +1,33 @@
-import React from 'react';
+import { useState } from 'react';
 import { PokemonProps } from '../../types/typing';
+import { removeFavoritePokemon, saveFavoritesPokemon, verifyIfIsFavorited } from '../../utils/favorites';
 import Pokemon from '../Pokemon/Pokemon';
 import ProgressBar from '../ProgressBar/ProgressBar';
-import { pokemonTypeColors } from '../utils/pokemon-type-colors';
+import { FaRegHeart, FaHeart } from "react-icons/fa";
+import PokemonType from '../PokemonType/PokemonType';
+
 
 const PokemonDetails = ({ pokemon }: PokemonProps) => {
+    const [areInFavorite, setAreInFavorite] = useState(verifyIfIsFavorited(pokemon.id))
 
-    console.log(pokemon)
+    const handleClickToFavorite = () => {
+        areInFavorite ? (
+            removeFavoritePokemon(pokemon.id),
+            setAreInFavorite(verifyIfIsFavorited(pokemon.id))
+        ) : (
+            saveFavoritesPokemon(pokemon),
+            setAreInFavorite(verifyIfIsFavorited(pokemon.id)));
+    }
+
     return (
         <div className="pokemon-details-container">
             <div className='pokemon-details-card'>
-                <p className='pokemon-details-name'>{pokemon.name}</p>
+                <div className='pokemon-details-favorite'>
+                    <p className='pokemon-details-name'>{pokemon.name}</p>
+                    <div onClick={() => handleClickToFavorite()}>
+                        {areInFavorite ? (<FaHeart size={30} color="#C22E28" />) : (<FaRegHeart size={30} color="#373E59" />)}
+                    </div>
+                </div>
                 <div className='pokemon-details-about'>
 
                     <div>
@@ -19,14 +36,13 @@ const PokemonDetails = ({ pokemon }: PokemonProps) => {
                             Types:
                             {pokemon.types.map((types: any) => {
                                 const type = types.type.name;
-                                return <p className="pokemon-details-type__item" style={{ backgroundColor: pokemonTypeColors[type] }}>{type}</p>
+                                return <PokemonType type={type} />
                             })}
                         </div>
 
                         <div className="pokemon-details-abilities">
                             Abilities:
                             {pokemon.abilities.map((value: any) => {
-                                console.log(value.ability.name);
                                 return <p className="pokemon-details-abilities__item">{value.ability.name}</p>
                             })}
                         </div>
