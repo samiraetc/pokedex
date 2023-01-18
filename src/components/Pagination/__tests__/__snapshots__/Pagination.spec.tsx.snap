@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[PAGINATION] should render Pagination 1`] = `
+<DocumentFragment>
+  <div
+    class="pagination-container"
+    id="pokedex-pagination"
+  >
+    <button
+      class="pagination-button"
+      id="pokedex-pagination-back"
+    >
+      <div>
+        <svg
+          color="#373E59"
+          fill="none"
+          height="30"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          style="color: rgb(55, 62, 89);"
+          viewBox="0 0 24 24"
+          width="30"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            x1="19"
+            x2="5"
+            y1="12"
+            y2="12"
+          />
+          <polyline
+            points="12 19 5 12 12 5"
+          />
+        </svg>
+      </div>
+    </button>
+    <div
+      class="pagination-page"
+    >
+      1 of 10
+    </div>
+    <button
+      class="pagination-button"
+      id="pokedex-pagination-next"
+    >
+      <div>
+        <svg
+          color="#373E59"
+          fill="none"
+          height="30"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          style="color: rgb(55, 62, 89);"
+          viewBox="0 0 24 24"
+          width="30"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            x1="5"
+            x2="19"
+            y1="12"
+            y2="12"
+          />
+          <polyline
+            points="12 5 19 12 12 19"
+          />
+        </svg>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;

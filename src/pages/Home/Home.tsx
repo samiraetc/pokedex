@@ -5,6 +5,8 @@ import Loading from '../../components/Loading/Loading';
 import Pagination from '../../components/Pagination/Pagination';
 import { Pokemon } from '../../types/typing';
 
+export const COMPONENT_ID = 'pokedex-home'
+
 
 const Home = () => {
     const [loading, setLoading] = useState(true);
@@ -43,7 +45,7 @@ const Home = () => {
     }, [page])
 
     return (
-        <div>
+        <div id={COMPONENT_ID}>
             {
                 !loading ? (
                     <div className="container">

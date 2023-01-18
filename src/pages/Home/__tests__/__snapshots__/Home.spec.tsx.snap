@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[HOME] should render Home Page 1`] = `
+<DocumentFragment>
+  <div
+    id="pokedex-home"
+  >
+    <div
+      id="pokedex-loading"
+    >
+      <img
+        alt="pokebola icon"
+        class="loading"
+        src="default"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`[HOME] should render Home Page and click to got to next page 1`] = `
+<DocumentFragment>
+  <div
+    id="pokedex-home"
+  >
+    <div
+      id="pokedex-loading"
+    >
+      <img
+        alt="pokebola icon"
+        class="loading"
+        src="default"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

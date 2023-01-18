@@ -5,6 +5,8 @@ import Card from '../../components/Card/Card';
 import Loading from '../../components/Loading/Loading';
 import PokemonDetails from '../../components/PokemonDetails/PokemonDetails';
 
+export const COMPONENT_ID = 'pokedex-details'
+
 const Details = () => {
     const {id} = useParams();
     const [pokemons, setPokemons] = useState([] as any);
@@ -27,7 +29,7 @@ const Details = () => {
 
 
     return (
-        <h1>
+        <h1 id={COMPONENT_ID}>
           { !loading ? (<PokemonDetails pokemon={pokemons} />) : (<Loading />)}
         </h1>
     )

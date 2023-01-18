@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[LOADING] should render Loading 1`] = `
+<DocumentFragment>
+  <div
+    id="pokedex-card"
+  >
+    <a
+      href="/details/raticate"
+    >
+      <div
+        class="card"
+      >
+        <div
+          class="pokemon"
+          id="pokedex-pokemon"
+        >
+          <img
+            alt="raticate"
+            class="pokemon-avatar"
+            src="string"
+          />
+          <div
+            class="pokemon__infos"
+          >
+            <p
+              class="pokemon__name"
+            >
+              raticate
+            </p>
+            <p
+              class="pokemon__number"
+            >
+              #20
+            </p>
+          </div>
+          <div
+            class="pokemon__infos"
+          >
+            <p>
+              18.5 kg
+            </p>
+            <p>
+              0.7 m
+            </p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</DocumentFragment>
+`;

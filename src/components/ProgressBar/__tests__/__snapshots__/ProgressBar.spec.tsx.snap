@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[PROGRESSBAR] should render ProgressBar 1`] = `
+<DocumentFragment>
+  <div
+    class="progress-bar"
+    id="pokedex-progress-bar"
+  >
+    <div
+      class="progress-bar__container"
+    >
+      <div
+        class="progress-bar__filler"
+        style="width: 80%;"
+      />
+    </div>
+    <span
+      class="progress-bar__label"
+    >
+      80
+    </span>
+  </div>
+</DocumentFragment>
+`;

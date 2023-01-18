@@ -1,8 +1,14 @@
 import React from "react";
 
-const ProgressBar = ({ completed }: any) => {
+export const COMPONENT_ID = 'pokedex-progress-bar'
+
+type ProgressBarProps = {
+  completed: number,
+}
+
+const ProgressBar = ({ completed }: ProgressBarProps) => {
   return (
-    <div className="progress-bar">
+    <div className="progress-bar" id={COMPONENT_ID}>
       <div className="progress-bar__container">
         <div className="progress-bar__filler" style={{ width: `${completed}%` }}>
         </div>

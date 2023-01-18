@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[POKEMONTYPE] should render PokemonType 1`] = `
+<DocumentFragment>
+  <p
+    class="pokemon-details-type__item"
+    id="pokemon-details-type"
+    style="background-color: rgb(168, 167, 122);"
+  >
+    normal
+  </p>
+</DocumentFragment>
+`;

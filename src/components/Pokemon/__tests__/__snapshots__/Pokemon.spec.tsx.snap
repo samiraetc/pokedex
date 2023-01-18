@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[POKEMON] should render Pokemon 1`] = `
+<DocumentFragment>
+  <div
+    class="pokemon"
+    id="pokedex-pokemon"
+  >
+    <img
+      alt="raticate"
+      class="pokemon-avatar"
+      src="string"
+    />
+    <div
+      class="pokemon__infos"
+    >
+      <p
+        class="pokemon__name"
+      >
+        raticate
+      </p>
+      <p
+        class="pokemon__number"
+      >
+        #20
+      </p>
+    </div>
+    <div
+      class="pokemon__infos"
+    >
+      <p>
+        18.5 kg
+      </p>
+      <p>
+        0.7 m
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
