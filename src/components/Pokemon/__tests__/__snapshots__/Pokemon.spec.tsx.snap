@@ -7,9 +7,9 @@ exports[`[POKEMON] should render Pokemon 1`] = `
     id="pokedex-pokemon"
   >
     <img
-      alt="raticate"
+      alt="bulbasaur"
       class="pokemon-avatar"
-      src="string"
+      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
     />
     <div
       class="pokemon__infos"
@@ -17,19 +17,19 @@ exports[`[POKEMON] should render Pokemon 1`] = `
       <p
         class="pokemon__name"
       >
-        raticate
+        bulbasaur
       </p>
       <p
         class="pokemon__number"
       >
-        #20
+        #1
       </p>
     </div>
     <div
       class="pokemon__infos"
     >
       <p>
-        18.5 kg
+        6.9 kg
       </p>
       <p>
         0.7 m

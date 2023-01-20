@@ -9,4 +9,5 @@ module.exports = {
     ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|gif|woff|woff2)$": "identity-obj-proxy",
   },
   coveragePathIgnorePatterns: ['node_modules'],
+  modulePathIgnorePatterns: ["<rootDir>/src/App.tsx", "<rootDir>/src/main.tsx" ]
 }

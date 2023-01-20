@@ -1,15 +1,18 @@
 import { useState } from 'react';
-import { PokemonProps } from '../../types/typing';
+import { Pokemon } from '../../types/typing';
 import { removeFavoritePokemon, saveFavoritesPokemon, verifyIfIsFavorited } from '../../utils/favorites';
-import Pokemon from '../Pokemon/Pokemon';
+import Pokemons from '../Pokemon/Pokemon';
 import ProgressBar from '../ProgressBar/ProgressBar';
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 import PokemonType from '../PokemonType/PokemonType';
 
 export const COMPONENT_ID = 'pokedex-pokemon-details'
 
+interface PokemonDetailsProps {
+    pokemon: Pokemon
+}
 
-const PokemonDetails = ({ pokemon }: PokemonProps) => {
+const PokemonDetails = ({ pokemon }: PokemonDetailsProps) => {
     const [areInFavorite, setAreInFavorite] = useState(verifyIfIsFavorited(pokemon.id))
 
     const handleClickToFavorite = () => {
@@ -33,7 +36,7 @@ const PokemonDetails = ({ pokemon }: PokemonProps) => {
                 <div className='pokemon-details-about'>
 
                     <div>
-                        <Pokemon pokemon={pokemon} />
+                        <Pokemons pokemon={pokemon} />
                         <div className="pokemon-details-type">
                             Types:
                             {pokemon.types.map((types: any, index: number) => {

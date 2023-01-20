@@ -1,4 +1,5 @@
 import { render, configure, fireEvent } from '@testing-library/react'
+import { mock } from '../../../utils/mock';
 import PokemonDetails, { COMPONENT_ID } from '../PokemonDetails';
 
 configure({
@@ -6,60 +7,32 @@ configure({
 });
 
 
-describe('[POKEMON]', () => {
+describe('[POKEMON-DETAILS]', () => {
 
-    test('should render Pokemon', () => {
-        const { asFragment, getByText, getAllByText, getByTestId } = render(<PokemonDetails pokemon={{
-            name: 'raticate',
-            id: 20,
-            abilities: [{ ability: { name: 'run-away' } }
-            ],
-            sprites: { front_default: 'string' },
-            types: [{ type: { name: 'normal' } }],
-            stats: [{ base_stat: 20, stat: { name: 'hp' } }],
-            weight: 185,
-            height: 7,
-        }} />);
+    test('should render Pokemon Details', () => {
+        const { asFragment, getAllByText, getByTestId } = render(<PokemonDetails pokemon={mock.pokemon[0]} />);
 
-        expect(getAllByText('raticate'));
-        expect(getByText('#20'));
+        expect(getAllByText('bulbasaur'));
+        expect(getAllByText('#1'));
         expect(getByTestId(COMPONENT_ID)).toBeInTheDocument();
         expect(asFragment()).toMatchSnapshot();
     });
 
     test('should render Pokemon and click to favorite', () => {
-        const { asFragment, getByText, getAllByText, getByTestId } = render(<PokemonDetails pokemon={{
-            name: 'raticate',
-            id: 20,
-            abilities: [{ ability: { name: 'run-away' } }
-            ],
-            sprites: { front_default: 'string' },
-            types: [{ type: { name: 'normal' } }],
-            stats: [{ base_stat: 20, stat: { name: 'hp' } }],
-            weight: 185,
-            height: 7,
-        }} />);
+        const { asFragment, getAllByText, getByTestId } = render(<PokemonDetails pokemon={mock.pokemon[0]} />);
 
-        expect(getAllByText('raticate'));
+        expect(getAllByText('bulbasaur'));
+        expect(getAllByText('#1'));;
         fireEvent.click(getByTestId(`${COMPONENT_ID}__favorite`));
         expect(getByTestId(COMPONENT_ID)).toBeInTheDocument();
         expect(asFragment()).toMatchSnapshot();
     });
 
     test('should render Pokemon and click to remove favorite', () => {
-        const { asFragment, getByText, getAllByText, getByTestId } = render(<PokemonDetails pokemon={{
-            name: 'raticate',
-            id: 20,
-            abilities: [{ ability: { name: 'run-away' } }
-            ],
-            sprites: { front_default: 'string' },
-            types: [{ type: { name: 'normal' } }],
-            stats: [{ base_stat: 20, stat: { name: 'hp' } }],
-            weight: 185,
-            height: 7,
-        }} />);
+        const { asFragment, getAllByText, getByTestId } = render(<PokemonDetails pokemon={mock.pokemon[0]} />);
 
-        expect(getAllByText('raticate'));
+        expect(getAllByText('bulbasaur'));
+        expect(getAllByText('#1'));
         fireEvent.click(getByTestId(`${COMPONENT_ID}__favorite`));
         fireEvent.click(getByTestId(`${COMPONENT_ID}__favorite`));
         expect(getByTestId(COMPONENT_ID)).toBeInTheDocument();

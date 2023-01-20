@@ -1,8 +1,6 @@
-import React from "react";
-
 export const COMPONENT_ID = 'pokedex-progress-bar'
 
-type ProgressBarProps = {
+interface ProgressBarProps {
   completed: number,
 }
 

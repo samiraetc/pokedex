@@ -3,7 +3,7 @@ import { pokemonTypeColors } from "../../utils/pokemon-type-colors";
 
 export const COMPONENT_ID = 'pokemon-details-type';
 
-export type PokemonTypeProps = {
+interface PokemonTypeProps {
     type: string,
 }
 

@@ -1,16 +1,20 @@
 import { Link } from 'react-router-dom';
-import { PokemonProps } from '../../types/typing';
-import Pokemon from '../Pokemon/Pokemon';
+import { Pokemon, PokemonProps } from '../../types/typing';
+import { mock } from '../../utils/mock';
+import Pokemons from '../Pokemon/Pokemon';
 
 export const COMPONENT_ID = 'pokedex-card'
 
+interface CardProps {
+    pokemon: Pokemon
+}
 
-const Card = ({ pokemon }: PokemonProps) => {
+const Card = ({ pokemon }: CardProps) => {
     return (
         <div id={COMPONENT_ID}>
-            <Link to={`/details/${pokemon.name}`} >
+            <Link to={`/details/${pokemon.id}`} >
                 <div className="card">
-                    <Pokemon pokemon={pokemon} />
+                    <Pokemons pokemon={pokemon} />
                 </div>
             </Link>
         </div>

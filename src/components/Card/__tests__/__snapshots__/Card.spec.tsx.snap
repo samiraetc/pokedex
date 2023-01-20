@@ -6,7 +6,7 @@ exports[`[LOADING] should render Loading 1`] = `
     id="pokedex-card"
   >
     <a
-      href="/details/raticate"
+      href="/details/20"
     >
       <div
         class="card"

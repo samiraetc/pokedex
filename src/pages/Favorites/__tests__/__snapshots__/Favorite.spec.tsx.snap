@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[FAVORITES] should render Favorites Page 1`] = `
+<DocumentFragment>
+  <div
+    id="pokedex-favorite"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="pokemon-list-container"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`[FAVORITES] should render Favorites Page and click to got to next page 1`] = `
+<DocumentFragment>
+  <div
+    id="pokedex-favorite"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="pokemon-list-container"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`[POKEMON] should render Pokemon 1`] = `
+exports[`[POKEMON-DETAILS] should render Pokemon Details 1`] = `
 <DocumentFragment>
   <div
     class="pokemon-details-container"
@@ -15,7 +15,7 @@ exports[`[POKEMON] should render Pokemon 1`] = `
         <p
           class="pokemon-details-name"
         >
-          raticate
+          bulbasaur
         </p>
         <div
           id="pokedex-pokemon-details__favorite"
@@ -46,9 +46,9 @@ exports[`[POKEMON] should render Pokemon 1`] = `
             id="pokedex-pokemon"
           >
             <img
-              alt="raticate"
+              alt="bulbasaur"
               class="pokemon-avatar"
-              src="string"
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
             />
             <div
               class="pokemon__infos"
@@ -56,19 +56,19 @@ exports[`[POKEMON] should render Pokemon 1`] = `
               <p
                 class="pokemon__name"
               >
-                raticate
+                bulbasaur
               </p>
               <p
                 class="pokemon__number"
               >
-                #20
+                #1
               </p>
             </div>
             <div
               class="pokemon__infos"
             >
               <p>
-                18.5 kg
+                6.9 kg
               </p>
               <p>
                 0.7 m
@@ -82,9 +82,16 @@ exports[`[POKEMON] should render Pokemon 1`] = `
             <p
               class="pokemon-details-type__item"
               id="pokemon-details-type"
-              style="background-color: rgb(168, 167, 122);"
+              style="background-color: rgb(122, 199, 76);"
             >
-              normal
+              grass
+            </p>
+            <p
+              class="pokemon-details-type__item"
+              id="pokemon-details-type"
+              style="background-color: rgb(163, 62, 161);"
+            >
+              poison
             </p>
           </div>
           <div
@@ -94,7 +101,12 @@ exports[`[POKEMON] should render Pokemon 1`] = `
             <p
               class="pokemon-details-abilities__item"
             >
-              run-away
+              overgrow
+            </p>
+            <p
+              class="pokemon-details-abilities__item"
+            >
+              chlorophyll
             </p>
           </div>
         </div>
@@ -114,13 +126,128 @@ exports[`[POKEMON] should render Pokemon 1`] = `
               >
                 <div
                   class="progress-bar__filler"
-                  style="width: 20%;"
+                  style="width: 48%;"
                 />
               </div>
               <span
                 class="progress-bar__label"
               >
-                20
+                48
+              </span>
+            </div>
+          </div>
+          <div
+            class="pokemon-details-stats__item"
+          >
+            attack
+            <div
+              class="progress-bar"
+              id="pokedex-progress-bar"
+            >
+              <div
+                class="progress-bar__container"
+              >
+                <div
+                  class="progress-bar__filler"
+                  style="width: 49%;"
+                />
+              </div>
+              <span
+                class="progress-bar__label"
+              >
+                49
+              </span>
+            </div>
+          </div>
+          <div
+            class="pokemon-details-stats__item"
+          >
+            defense
+            <div
+              class="progress-bar"
+              id="pokedex-progress-bar"
+            >
+              <div
+                class="progress-bar__container"
+              >
+                <div
+                  class="progress-bar__filler"
+                  style="width: 49%;"
+                />
+              </div>
+              <span
+                class="progress-bar__label"
+              >
+                49
+              </span>
+            </div>
+          </div>
+          <div
+            class="pokemon-details-stats__item"
+          >
+            special-attack
+            <div
+              class="progress-bar"
+              id="pokedex-progress-bar"
+            >
+              <div
+                class="progress-bar__container"
+              >
+                <div
+                  class="progress-bar__filler"
+                  style="width: 65%;"
+                />
+              </div>
+              <span
+                class="progress-bar__label"
+              >
+                65
+              </span>
+            </div>
+          </div>
+          <div
+            class="pokemon-details-stats__item"
+          >
+            special-defense
+            <div
+              class="progress-bar"
+              id="pokedex-progress-bar"
+            >
+              <div
+                class="progress-bar__container"
+              >
+                <div
+                  class="progress-bar__filler"
+                  style="width: 65%;"
+                />
+              </div>
+              <span
+                class="progress-bar__label"
+              >
+                65
+              </span>
+            </div>
+          </div>
+          <div
+            class="pokemon-details-stats__item"
+          >
+            speed
+            <div
+              class="progress-bar"
+              id="pokedex-progress-bar"
+            >
+              <div
+                class="progress-bar__container"
+              >
+                <div
+                  class="progress-bar__filler"
+                  style="width: 45%;"
+                />
+              </div>
+              <span
+                class="progress-bar__label"
+              >
+                45
               </span>
             </div>
           </div>
@@ -131,7 +258,7 @@ exports[`[POKEMON] should render Pokemon 1`] = `
 </DocumentFragment>
 `;
 
-exports[`[POKEMON] should render Pokemon and click to favorite 1`] = `
+exports[`[POKEMON-DETAILS] should render Pokemon and click to favorite 1`] = `
 <DocumentFragment>
   <div
     class="pokemon-details-container"
@@ -146,7 +273,7 @@ exports[`[POKEMON] should render Pokemon and click to favorite 1`] = `
         <p
           class="pokemon-details-name"
         >
-          raticate
+          bulbasaur
         </p>
         <div
           id="pokedex-pokemon-details__favorite"
@@ -177,9 +304,9 @@ exports[`[POKEMON] should render Pokemon and click to favorite 1`] = `
             id="pokedex-pokemon"
           >
             <img
-              alt="raticate"
+              alt="bulbasaur"
               class="pokemon-avatar"
-              src="string"
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
             />
             <div
               class="pokemon__infos"
@@ -187,19 +314,19 @@ exports[`[POKEMON] should render Pokemon and click to favorite 1`] = `
               <p
                 class="pokemon__name"
               >
-                raticate
+                bulbasaur
               </p>
               <p
                 class="pokemon__number"
               >
-                #20
+                #1
               </p>
             </div>
             <div
               class="pokemon__infos"
             >
               <p>
-                18.5 kg
+                6.9 kg
               </p>
               <p>
                 0.7 m
@@ -213,9 +340,16 @@ exports[`[POKEMON] should render Pokemon and click to favorite 1`] = `
             <p
               class="pokemon-details-type__item"
               id="pokemon-details-type"
-              style="background-color: rgb(168, 167, 122);"
+              style="background-color: rgb(122, 199, 76);"
             >
-              normal
+              grass
+            </p>
+            <p
+              class="pokemon-details-type__item"
+              id="pokemon-details-type"
+              style="background-color: rgb(163, 62, 161);"
+            >
+              poison
             </p>
           </div>
           <div
@@ -225,7 +359,12 @@ exports[`[POKEMON] should render Pokemon and click to favorite 1`] = `
             <p
               class="pokemon-details-abilities__item"
             >
-              run-away
+              overgrow
+            </p>
+            <p
+              class="pokemon-details-abilities__item"
+            >
+              chlorophyll
             </p>
           </div>
         </div>
@@ -245,13 +384,128 @@ exports[`[POKEMON] should render Pokemon and click to favorite 1`] = `
               >
                 <div
                   class="progress-bar__filler"
-                  style="width: 20%;"
+                  style="width: 48%;"
                 />
               </div>
               <span
                 class="progress-bar__label"
               >
-                20
+                48
+              </span>
+            </div>
+          </div>
+          <div
+            class="pokemon-details-stats__item"
+          >
+            attack
+            <div
+              class="progress-bar"
+              id="pokedex-progress-bar"
+            >
+              <div
+                class="progress-bar__container"
+              >
+                <div
+                  class="progress-bar__filler"
+                  style="width: 49%;"
+                />
+              </div>
+              <span
+                class="progress-bar__label"
+              >
+                49
+              </span>
+            </div>
+          </div>
+          <div
+            class="pokemon-details-stats__item"
+          >
+            defense
+            <div
+              class="progress-bar"
+              id="pokedex-progress-bar"
+            >
+              <div
+                class="progress-bar__container"
+              >
+                <div
+                  class="progress-bar__filler"
+                  style="width: 49%;"
+                />
+              </div>
+              <span
+                class="progress-bar__label"
+              >
+                49
+              </span>
+            </div>
+          </div>
+          <div
+            class="pokemon-details-stats__item"
+          >
+            special-attack
+            <div
+              class="progress-bar"
+              id="pokedex-progress-bar"
+            >
+              <div
+                class="progress-bar__container"
+              >
+                <div
+                  class="progress-bar__filler"
+                  style="width: 65%;"
+                />
+              </div>
+              <span
+                class="progress-bar__label"
+              >
+                65
+              </span>
+            </div>
+          </div>
+          <div
+            class="pokemon-details-stats__item"
+          >
+            special-defense
+            <div
+              class="progress-bar"
+              id="pokedex-progress-bar"
+            >
+              <div
+                class="progress-bar__container"
+              >
+                <div
+                  class="progress-bar__filler"
+                  style="width: 65%;"
+                />
+              </div>
+              <span
+                class="progress-bar__label"
+              >
+                65
+              </span>
+            </div>
+          </div>
+          <div
+            class="pokemon-details-stats__item"
+          >
+            speed
+            <div
+              class="progress-bar"
+              id="pokedex-progress-bar"
+            >
+              <div
+                class="progress-bar__container"
+              >
+                <div
+                  class="progress-bar__filler"
+                  style="width: 45%;"
+                />
+              </div>
+              <span
+                class="progress-bar__label"
+              >
+                45
               </span>
             </div>
           </div>
@@ -262,7 +516,7 @@ exports[`[POKEMON] should render Pokemon and click to favorite 1`] = `
 </DocumentFragment>
 `;
 
-exports[`[POKEMON] should render Pokemon and click to remove favorite 1`] = `
+exports[`[POKEMON-DETAILS] should render Pokemon and click to remove favorite 1`] = `
 <DocumentFragment>
   <div
     class="pokemon-details-container"
@@ -277,7 +531,7 @@ exports[`[POKEMON] should render Pokemon and click to remove favorite 1`] = `
         <p
           class="pokemon-details-name"
         >
-          raticate
+          bulbasaur
         </p>
         <div
           id="pokedex-pokemon-details__favorite"
@@ -308,9 +562,9 @@ exports[`[POKEMON] should render Pokemon and click to remove favorite 1`] = `
             id="pokedex-pokemon"
           >
             <img
-              alt="raticate"
+              alt="bulbasaur"
               class="pokemon-avatar"
-              src="string"
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
             />
             <div
               class="pokemon__infos"
@@ -318,19 +572,19 @@ exports[`[POKEMON] should render Pokemon and click to remove favorite 1`] = `
               <p
                 class="pokemon__name"
               >
-                raticate
+                bulbasaur
               </p>
               <p
                 class="pokemon__number"
               >
-                #20
+                #1
               </p>
             </div>
             <div
               class="pokemon__infos"
             >
               <p>
-                18.5 kg
+                6.9 kg
               </p>
               <p>
                 0.7 m
@@ -344,9 +598,16 @@ exports[`[POKEMON] should render Pokemon and click to remove favorite 1`] = `
             <p
               class="pokemon-details-type__item"
               id="pokemon-details-type"
-              style="background-color: rgb(168, 167, 122);"
+              style="background-color: rgb(122, 199, 76);"
             >
-              normal
+              grass
+            </p>
+            <p
+              class="pokemon-details-type__item"
+              id="pokemon-details-type"
+              style="background-color: rgb(163, 62, 161);"
+            >
+              poison
             </p>
           </div>
           <div
@@ -356,7 +617,12 @@ exports[`[POKEMON] should render Pokemon and click to remove favorite 1`] = `
             <p
               class="pokemon-details-abilities__item"
             >
-              run-away
+              overgrow
+            </p>
+            <p
+              class="pokemon-details-abilities__item"
+            >
+              chlorophyll
             </p>
           </div>
         </div>
@@ -376,13 +642,128 @@ exports[`[POKEMON] should render Pokemon and click to remove favorite 1`] = `
               >
                 <div
                   class="progress-bar__filler"
-                  style="width: 20%;"
+                  style="width: 48%;"
                 />
               </div>
               <span
                 class="progress-bar__label"
               >
-                20
+                48
+              </span>
+            </div>
+          </div>
+          <div
+            class="pokemon-details-stats__item"
+          >
+            attack
+            <div
+              class="progress-bar"
+              id="pokedex-progress-bar"
+            >
+              <div
+                class="progress-bar__container"
+              >
+                <div
+                  class="progress-bar__filler"
+                  style="width: 49%;"
+                />
+              </div>
+              <span
+                class="progress-bar__label"
+              >
+                49
+              </span>
+            </div>
+          </div>
+          <div
+            class="pokemon-details-stats__item"
+          >
+            defense
+            <div
+              class="progress-bar"
+              id="pokedex-progress-bar"
+            >
+              <div
+                class="progress-bar__container"
+              >
+                <div
+                  class="progress-bar__filler"
+                  style="width: 49%;"
+                />
+              </div>
+              <span
+                class="progress-bar__label"
+              >
+                49
+              </span>
+            </div>
+          </div>
+          <div
+            class="pokemon-details-stats__item"
+          >
+            special-attack
+            <div
+              class="progress-bar"
+              id="pokedex-progress-bar"
+            >
+              <div
+                class="progress-bar__container"
+              >
+                <div
+                  class="progress-bar__filler"
+                  style="width: 65%;"
+                />
+              </div>
+              <span
+                class="progress-bar__label"
+              >
+                65
+              </span>
+            </div>
+          </div>
+          <div
+            class="pokemon-details-stats__item"
+          >
+            special-defense
+            <div
+              class="progress-bar"
+              id="pokedex-progress-bar"
+            >
+              <div
+                class="progress-bar__container"
+              >
+                <div
+                  class="progress-bar__filler"
+                  style="width: 65%;"
+                />
+              </div>
+              <span
+                class="progress-bar__label"
+              >
+                65
+              </span>
+            </div>
+          </div>
+          <div
+            class="pokemon-details-stats__item"
+          >
+            speed
+            <div
+              class="progress-bar"
+              id="pokedex-progress-bar"
+            >
+              <div
+                class="progress-bar__container"
+              >
+                <div
+                  class="progress-bar__filler"
+                  style="width: 45%;"
+                />
+              </div>
+              <span
+                class="progress-bar__label"
+              >
+                45
               </span>
             </div>
           </div>

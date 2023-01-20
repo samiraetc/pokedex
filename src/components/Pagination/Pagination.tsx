@@ -3,14 +3,14 @@ import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 
 export const COMPONENT_ID = 'pokedex-pagination'
 
-type Pagination = {
-    handleNextPage: any;
-    handleBackPage: any;
+interface PaginationProps {
+    handleNextPage: () => void;
+    handleBackPage: () => void;
     page: number,
     totalPages: number,
 }
 
-const Pagination = ({ handleBackPage, handleNextPage, page, totalPages }: Pagination) => {
+const Pagination = ({ handleBackPage, handleNextPage, page, totalPages }: PaginationProps) => {
 
     return (
         <div className="pagination-container" id={COMPONENT_ID}>

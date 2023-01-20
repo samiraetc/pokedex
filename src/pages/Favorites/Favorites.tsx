@@ -3,6 +3,8 @@ import Card from '../../components/Card/Card';
 import { Pokemon } from '../../types/typing';
 import { getFavoritesPokemon } from '../../utils/favorites';
 
+export const COMPONENT_ID = 'pokedex-favorite';
+
 const Favorites = () => {
     const [favorites, setFavorites] = useState([])
     const [pokemon, setPokemon] = useState<Pokemon>([] as any);
@@ -12,7 +14,7 @@ const Favorites = () => {
     }, [])
 
     return (
-        <div>
+        <div id={COMPONENT_ID}>
             <div className="container">
                 <div className="pokemon-list-container">
                     {favorites.map((pokemon: Pokemon) => {
