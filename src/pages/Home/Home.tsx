@@ -21,7 +21,10 @@ const Home = () => {
             const data = await getPokemon(itensPerPage, itensPerPage * page);
             setPokemons(data?.pokemons);
             setTotalPages(Math.ceil(data?.count / itensPerPage));
-            setLoading(false)
+
+            setInterval(() => {
+                setLoading(false);
+              }, 1500);
         } catch (error) {
             console.log('fetchPokemons error:', error)
         }
