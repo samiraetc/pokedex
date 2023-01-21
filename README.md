@@ -5,6 +5,7 @@
 
 ## Description
 
+Small application built with React and Typescript consuming the public [PokeAPI](https://pokeapi.co/). In this project you will see in the home page a list of pokemons. You can click in one item and see all details about there. You can click an a pokeball and favorite the one Pokemon and you can see your favorites pokemons in favorite page;
 
 ## Technologies
 
@@ -14,6 +15,26 @@
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![Testing-Library](https://img.shields.io/badge/-TestingLibrary-%23E33332?style=for-the-badge&logo=testing-library&logoColor=white)
+
+## Functional and Technical requirements
+
+#### Functional
+
+- [X] The user should be able to see a main screen with a list of all Pokémons (with corresponding name and image for each of them).
+- [x] In the main page: apply pagination in the list of Pokémons.
+- [x] From the main page, while clicking a Pokémon, the user should be able to navigate toanother page containing the details of that Pokémon.
+- [x] In the Pokémon details page, the user should see at least 6 descriptions, the image and the name of one Pokémon.
+- [x] In the Pokémon detail page, the user should be able to favorite the Pokémon.
+- [x] From the main page, the user should be able to navigate to another page. This page should contain a list of the favorite Pokémons (with corresponding name and image for each of them).
+
+#### Technical
+- [x] The application should be implemented in React.
+- [x] To get the list of Pókemons and their details, use the [PokeAPI](https://pokeapi.co/)
+- [x] Usage of the local storage to handle the list of favorite Pokémons.
+- [x] The app should be responsive (adapt UI so it can be displayed in different screen sizes).
+- [x] The code should contain comments.
+- [x] The application code should be submitted in GitHub.
+- [x] On the README file of GitHub, should be mentioned the following information: small description of the application, functional and technical requirements accomplished,technologies used, and the steps of installation.
 
 ## Quick Start
 
