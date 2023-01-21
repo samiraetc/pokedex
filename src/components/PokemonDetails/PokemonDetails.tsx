@@ -3,8 +3,10 @@ import { Pokemon } from '../../types/typing';
 import { removeFavoritePokemon, saveFavoritesPokemon, verifyIfIsFavorited } from '../../utils/favorites';
 import Pokemons from '../Pokemon/Pokemon';
 import ProgressBar from '../ProgressBar/ProgressBar';
-import { FaRegHeart, FaHeart } from "react-icons/fa";
+import { MdOutlineCatchingPokemon, MdCatchingPokemon } from "react-icons/md";
 import PokemonType from '../PokemonType/PokemonType';
+import { FiArrowLeft } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
 export const COMPONENT_ID = 'pokedex-pokemon-details'
 
@@ -27,12 +29,17 @@ const PokemonDetails = ({ pokemon }: PokemonDetailsProps) => {
     return (
         <div className="pokemon-details-container" id={COMPONENT_ID}>
             <div className='pokemon-details-card'>
+                <Link to={`/`} >
+                    <FiArrowLeft size={30} color="#373E59" />
+                </Link>
                 <div className='pokemon-details-favorite'>
                     <p className='pokemon-details-name'>{pokemon.name}</p>
                     <div onClick={() => handleClickToFavorite()} id={`${COMPONENT_ID}__favorite`}>
-                        {areInFavorite ? (<FaHeart size={30} color="#C22E28" />) : (<FaRegHeart size={30} color="#373E59" />)}
+                        {areInFavorite ? (<MdCatchingPokemon size={30} color="#C22E28" />) : (<MdOutlineCatchingPokemon size={30} color="#373E59" />)}
+
                     </div>
                 </div>
+
                 <div className='pokemon-details-about'>
 
                     <div>
