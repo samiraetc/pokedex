@@ -63,6 +63,6 @@ http://localhost:5173/
 ```
 
 ## Screenshots
-![image](https://user-images.githubusercontent.com/22984504/212836099-a148abdb-dbaf-4ddf-89cc-f30985b44357.png)
-![image](https://user-images.githubusercontent.com/22984504/212836143-bb291ead-6cbb-4b13-94cf-7ac2bedb5784.png)
+
+https://user-images.githubusercontent.com/22984504/213840241-ae6d8584-ef9b-4555-929d-44ce019e0587.mp4
 
