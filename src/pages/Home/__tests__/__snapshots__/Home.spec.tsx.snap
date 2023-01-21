@@ -6,11 +6,12 @@ exports[`[HOME] should render Home Page 1`] = `
     id="pokedex-home"
   >
     <div
+      class="pokedex-loading"
       id="pokedex-loading"
     >
       <img
         alt="pokebola icon"
-        class="loading"
+        class="pokedex-loading__icon"
         src="default"
       />
     </div>
@@ -24,11 +25,12 @@ exports[`[HOME] should render Home Page and click to got to next page 1`] = `
     id="pokedex-home"
   >
     <div
+      class="pokedex-loading"
       id="pokedex-loading"
     >
       <img
         alt="pokebola icon"
-        class="loading"
+        class="pokedex-loading__icon"
         src="default"
       />
     </div>

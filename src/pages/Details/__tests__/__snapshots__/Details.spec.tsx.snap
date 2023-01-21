@@ -6,11 +6,12 @@ exports[`[DETAILS] should render Details Page 1`] = `
     id="pokedex-details"
   >
     <div
+      class="pokedex-loading"
       id="pokedex-loading"
     >
       <img
         alt="pokebola icon"
-        class="loading"
+        class="pokedex-loading__icon"
         src="default"
       />
     </div>

@@ -3,11 +3,12 @@
 exports[`[LOADING] should render Loading 1`] = `
 <DocumentFragment>
   <div
+    class="pokedex-loading"
     id="pokedex-loading"
   >
     <img
       alt="pokebola icon"
-      class="loading"
+      class="pokedex-loading__icon"
       src="default"
     />
   </div>

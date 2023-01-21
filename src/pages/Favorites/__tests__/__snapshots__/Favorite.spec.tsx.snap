@@ -6,10 +6,13 @@ exports[`[FAVORITES] should render Favorites Page 1`] = `
     id="pokedex-favorite"
   >
     <div
-      class="container"
+      class="pokedex-loading"
+      id="pokedex-loading"
     >
-      <div
-        class="pokemon-list-container"
+      <img
+        alt="pokebola icon"
+        class="pokedex-loading__icon"
+        src="default"
       />
     </div>
   </div>
@@ -22,10 +25,13 @@ exports[`[FAVORITES] should render Favorites Page and click to got to next page 
     id="pokedex-favorite"
   >
     <div
-      class="container"
+      class="pokedex-loading"
+      id="pokedex-loading"
     >
-      <div
-        class="pokemon-list-container"
+      <img
+        alt="pokebola icon"
+        class="pokedex-loading__icon"
+        src="default"
       />
     </div>
   </div>
