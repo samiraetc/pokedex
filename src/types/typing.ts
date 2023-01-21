@@ -1,7 +1,7 @@
 
 export type PokemonProps = {
     count?: number,
-    pokemon: Pokemon[]
+    pokemon: Pokemon[] 
 }
 
 export type Pokemon = {

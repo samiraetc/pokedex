@@ -7,6 +7,7 @@ import { MdOutlineCatchingPokemon, MdCatchingPokemon } from "react-icons/md";
 import PokemonType from '../PokemonType/PokemonType';
 import { FiArrowLeft } from "react-icons/fi";
 import { Link } from 'react-router-dom';
+import { PokemonDetailsMessages } from './PokemonDetailsMessage';
 
 export const COMPONENT_ID = 'pokedex-pokemon-details'
 
@@ -16,6 +17,7 @@ interface PokemonDetailsProps {
 
 const PokemonDetails = ({ pokemon }: PokemonDetailsProps) => {
     const [areInFavorite, setAreInFavorite] = useState(verifyIfIsFavorited(pokemon.id))
+    const wordings = PokemonDetailsMessages;
 
     const handleClickToFavorite = () => {
         areInFavorite ? (
@@ -45,7 +47,7 @@ const PokemonDetails = ({ pokemon }: PokemonDetailsProps) => {
                     <div>
                         <Pokemons pokemon={pokemon} />
                         <div className="pokemon-details-type">
-                            Types:
+                            {wordings.POKEMON_TYPES}
                             {pokemon.types.map((types: any, index: number) => {
                                 const type = types.type.name;
                                 return <PokemonType type={type} key={index} />
@@ -53,7 +55,7 @@ const PokemonDetails = ({ pokemon }: PokemonDetailsProps) => {
                         </div>
 
                         <div className="pokemon-details-abilities">
-                            Abilities:
+                            {wordings.POKEMON_ABILITIES}
                             {pokemon.abilities.map((value: any, index: number) => {
                                 return <p key={index} className="pokemon-details-abilities__item">{value.ability.name}</p>
                             })}

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[EMPTY-STATE] should render Empty State 1`] = `
+<DocumentFragment>
+  <div
+    class="pokedex-empty-state"
+    id="pokedex-empty-state"
+  >
+    <img
+      alt="pokemon icon"
+      class="pokedex-empty-state__icon"
+      src="default"
+    />
+    <h1
+      class="pokedex-empty-state__title"
+    >
+      You don't have any favorites pokemon yet
+    </h1>
+  </div>
+</DocumentFragment>
+`;
